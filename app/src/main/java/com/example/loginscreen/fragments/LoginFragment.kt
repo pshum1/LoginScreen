@@ -40,11 +40,15 @@ class LoginFragment : Fragment() {
         var view = inflater.inflate(R.layout.fragment_login, container, false)
         Log.d("abc", "onCreateView")
 
-        var emailSaved: String? = param3
-        var emailAndPass: Int = emailSaved?.length ?: -1
+        var name: String = param1?.toString() ?: "emptyname"
+        var number: String = param2?.toString() ?: "emptynumber"
+        var email: String = param3?.toString() ?: "emptyemail"
+        var pass: String = param4?.toString() ?: "emptypass"
 
-
-
+        Log.d("view", name)
+        Log.d("view", number)
+        Log.d("view", email)
+        Log.d("view", pass)
 
         init(view)
 
@@ -57,23 +61,16 @@ class LoginFragment : Fragment() {
         Log.d("abc", "initFrag")
 
 
-
-
         view.button_signIn.setOnClickListener {
-            var email: String? = view.edit_text_loginEmail.text.toString()
-            var password: String? = view.edit_text_loginPassword.text.toString()
+            var email: String? = view.et_loginEmail.text.toString()
+            var password: String? = view.et_loginPassword.text.toString()
 
             var emailSaved: String? = param3
             var passSaved: String? = param4
 
-            var emailAndPass: Int = emailSaved?.length ?: -1
-
-            Log.d("abc", emailAndPass.toString())
-            Log.d("abc", "clicked")
-
             if (email == null || password == null) {
                 Toast.makeText(context, "Enter email/password!", Toast.LENGTH_LONG).show()
-            } else if(email == param3 && password == param4){
+            } else if(email == emailSaved && password == passSaved){
                 var loggedInFragment: LoggedInFragment = LoggedInFragment.newInstance(param1, param2, param3, param4)
                 activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container, loggedInFragment)?.commit()
             } else {
@@ -81,7 +78,7 @@ class LoginFragment : Fragment() {
             }
         }
 
-        view.button_register.setOnClickListener {
+        view.button_register_login_screen.setOnClickListener {
             activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.fragment_container, RegisterFragment())?.commit()
         }
 
@@ -97,8 +94,8 @@ class LoginFragment : Fragment() {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
-                    putString(ARG_PARAM2, param3)
-                    putString(ARG_PARAM2, param4)
+                    putString(ARG_PARAM3, param3)
+                    putString(ARG_PARAM4, param4)
                 }
             }
     }

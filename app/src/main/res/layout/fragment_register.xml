@@ -28,7 +28,7 @@
         android:padding="16dp">
 
         <EditText
-            android:id="@+id/edit_text_number"
+            android:id="@+id/edit_text_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"
@@ -37,7 +37,7 @@
             android:textColorHint="@color/colorGrey" />
 
         <EditText
-            android:id="@+id/edit_text_name"
+            android:id="@+id/edit_text_number"
             style="@style/Spacing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

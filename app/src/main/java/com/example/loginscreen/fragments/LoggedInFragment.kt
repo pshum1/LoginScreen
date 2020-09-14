@@ -52,8 +52,8 @@ class LoggedInFragment : Fragment() {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
-                    putString(ARG_PARAM2, param3)
-                    putString(ARG_PARAM2, param4)
+                    putString(ARG_PARAM3, param3)
+                    putString(ARG_PARAM4, param4)
                 }
             }
     }

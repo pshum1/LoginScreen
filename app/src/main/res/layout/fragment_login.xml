@@ -25,7 +25,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/edit_text_loginEmail"
+            android:id="@+id/et_loginEmail"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/edit_text_loginPassword"
+            android:id="@+id/et_loginPassword"
             style="@style/Spacing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button_register"
+            android:id="@+id/button_register_login_screen"
             style="@style/Spacing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
