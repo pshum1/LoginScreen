@@ -29,58 +29,33 @@
 
         <EditText
             android:id="@+id/edit_text_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Name"
-            android:textColor="@color/colorWhite"
-            android:textSize="15sp"
-            android:textColorHint="@color/colorGrey" />
+            style="@style/EditTextStylesRegister"
+            android:hint="Name" />
 
         <EditText
             android:id="@+id/edit_text_number"
-            style="@style/Spacing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Number"
-            android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorGrey"
-            android:textSize="15sp" />
+            style="@style/EditTextStylesRegister"
+            android:hint="Number" />
 
 
         <EditText
             android:id="@+id/edit_text_loginEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:hint="E-mail"
-            android:singleLine="false"
-            android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorGrey"
-            android:textSize="15dp" />
+            style="@style/EditTextStylesRegister"
+            android:hint="E-mail" />
 
         <EditText
             android:id="@+id/edit_text_loginPassword"
-            style="@style/Spacing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStylesRegister"
             android:hint="Password"
-            android:inputType="textPassword"
-            android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorGrey"
-            android:textSize="15sp" />
+            android:inputType="textPassword" />
 
 
         <Button
             android:id="@+id/button_register"
-            style="@style/Spacing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Buttons"
             android:background="@drawable/rounded_corners2"
-            android:padding="20dp"
             android:text="@string/button_register"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
+            android:textAllCaps="false" />
 
     </LinearLayout>
 </LinearLayout>

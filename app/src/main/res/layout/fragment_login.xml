@@ -18,56 +18,36 @@
     </LinearLayout>
 
     <LinearLayout
-        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <EditText
             android:id="@+id/et_loginEmail"
+            style="@style/EditTextStylesLogin"
             android:layout_marginBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="E-mail"
-            android:singleLine="false"
-            android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorGrey"
-            android:textSize="15dp" />
+            android:hint="E-mail" />
 
         <EditText
             android:id="@+id/et_loginPassword"
-            style="@style/Spacing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStylesRegister"
             android:hint="Password"
-            android:inputType="textPassword"
-            android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorGrey"
-            android:textSize="15sp" />
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/button_signIn"
-            style="@style/Spacing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Buttons"
             android:background="@drawable/rounded_corners_green"
-            android:padding="20dp"
-            android:text="@string/button_sign_in"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
+            android:text="@string/button_sign_in" />
 
         <Button
             android:id="@+id/button_register_login_screen"
-            style="@style/Spacing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Buttons"
             android:background="@drawable/rounded_corners2"
-            android:padding="20dp"
             android:text="@string/button_register"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
+            android:textAllCaps="false" />
 
     </LinearLayout>
 </LinearLayout>
