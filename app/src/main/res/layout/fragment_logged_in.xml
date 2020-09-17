@@ -1,34 +1,43 @@
-<LinearLayout android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:padding="16dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Welcome!"
-        android:textSize="45dp"
-        android:gravity="center"/>
+        android:textSize="45dp" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="name"/>
+        android:text="name" />
 
     <TextView
         android:id="@+id/tv_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="number"/>
+        android:text="number" />
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="email"/>
+        android:text="email" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT" />
+
 </LinearLayout>

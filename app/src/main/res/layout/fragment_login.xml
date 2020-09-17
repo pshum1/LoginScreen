@@ -28,13 +28,30 @@
             android:id="@+id/et_loginEmail"
             style="@style/EditTextStylesLogin"
             android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFF"
             android:hint="E-mail" />
 
-        <EditText
-            android:id="@+id/et_loginPassword"
-            style="@style/EditTextStylesRegister"
-            android:hint="Password"
-            android:inputType="textPassword" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_loginPassword"
+                style="@style/EditTextStylesRegister"
+                android:backgroundTint="#FFF"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <ImageButton
+                android:id="@+id/button_show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/et_loginPassword"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_baseline_remove_red_eye_24" />
+
+        </RelativeLayout>
+
 
         <Button
             android:id="@+id/button_signIn"
